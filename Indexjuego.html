@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estylojuego.css">
+    <title>Juega con Qcomemos!</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="" style="padding-right: 80%;width: 10%;border-radius:15% 15% 15% 15%;">
+        <h1 id="tituloCategoria">"Comidas saludable"</h1>
+        <div class="numeroPregunta"><p>Pregunta 1:</p></div>
+    </header>
+    <main>
+        <div class="cardPregunta" id="pregunta1">
+            <h2 class="pregunta">¿Cuántas Calorias debe consumir un adulto promedio?</h2>
+            <div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(0,1,1)" id="respuesta1">1200-1500 calorías</button>
+                <button class="btn" onclick="validarRespuesta(0,2,1)" id="respuesta2">1500-1800 calorías</button>
+                <button class="btn" onclick="validarRespuesta(1,3,1)" id="respuesta3">2000-2500 calorías</button>
+                <button class="btn" onclick="validarRespuesta(0,4,1)" id="respuesta4">3000-3500 calorías</button>
+            </div>
+        </div>
+        <div class="cardPregunta oculto" id="pregunta2">
+            <h2 class="pregunta">¿Cuál de los siguientes es un mineral esencial para la salud ósea?</h2>
+            <div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(1,1,2)" id="respuesta1">Calcio</button>
+                <button class="btn" onclick="validarRespuesta(0,2,2)" id="respuesta2">Zinc</button>
+                <button class="btn" onclick="validarRespuesta(0,3,2)" id="respuesta3">Hierro</button>
+                <button class="btn" onclick="validarRespuesta(0,4,2)" id="respuesta4">Potasio</button>
+            </div>
+        </div>
+        <div class="cardPregunta oculto" id="pregunta3">
+            <h2 class="pregunta">¿Cuál de las siguientes opciones es una fuente importante de vitamina C?</h2>
+            <div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(0,1,3)" id="respuesta1">Espinaca</button>
+                <button class="btn" onclick="validarRespuesta(1,2,3)" id="respuesta2">Naranja</button>
+                <button class="btn" onclick="validarRespuesta(0,3,3)" id="respuesta3">Banana</button>
+                <button class="btn" onclick="validarRespuesta(0,4,3)" id="respuesta4">Almendra</button>
+            </div>
+        </div>
+        <div class="cardPregunta oculto" id="pregunta4">
+            <h2 class="pregunta">¿Cuál de los siguientes tipos de grasa se considera saludable para el corazón?</h2>
+            <div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(0,1,4)" id="respuesta1">Grasas trans</button>
+                <button class="btn" onclick="validarRespuesta(0,2,4)" id="respuesta2">Grasas saturadas</button>
+                <button class="btn" onclick="validarRespuesta(1,3,4)" id="respuesta3">Grasas monoinsaturadas</button>
+                <button class="btn" onclick="validarRespuesta(0,4,4)" id="respuesta4">Grasas hidrogenadas</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="feedback"></div>
+    </footer>
+    <script src="actiom.js"></script>
+</body>
+</html>
