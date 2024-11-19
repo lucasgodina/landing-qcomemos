@@ -1,7 +1,7 @@
 .icon {
-  width: 24px;
+  width: 40px;
   position: relative;
-  height: 24px;
+  height: 40px;
 }
 .brandname {
   position: relative;
@@ -105,7 +105,7 @@
   display: -webkit-inline-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .subheading {
@@ -189,14 +189,27 @@
 }
 .typeinverted-hero-with-full-s {
   align-self: stretch;
-  background-color: var(--color-gray-100);
+  background-color: #813c0a; /* Cambiado a un tono tierra */
   flex-wrap: wrap;
   align-content: center;
   z-index: 6;
   font-size: var(--font-size-53xl);
-  color: #f5f5f4;
+  color: #FFF5E1; /* Ajuste del color del texto para contraste */
   font-family: var(--font-playfair-display);
 }
+.no-underline {
+  text-decoration: none; /* Elimina la línea subrayada */
+  color: inherit; /* Mantiene el color del texto según el estilo general */
+}
+
+.no-underline:hover {
+  color: #8B4513; /* Cambia el color al pasar el mouse (opcional, puedes personalizarlo) */
+}
+
+.no-underline:hover {
+  color: #8B4513; /* Cambia el color al pasar el mouse (opcional, puedes personalizarlo) */
+}
+
 .heading1,
 .heading2 {
   position: relative;
@@ -248,12 +261,77 @@
   padding: var(--padding-13xl) 0;
   gap: var(--gap-21xl);
 }
-.container,
 .property-1big-numbers-just-te {
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Cambia esto por la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 20px; /* Añade un espacio interno para tu contenido */
+  color: #fff; /* Color predeterminado del texto */
+}
+
+.property-1big-numbers-just-te .heading1 {
+  color: #793905; /* Color verde para el título principal */
+  font-size: 5rem; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Aplica negrita */
+}
+
+.property-1big-numbers-just-te .heading2 {
+  color: #7a0707; /* Color rojo para los números */
+  font-size: 3.5rem; /* Ajusta el tamaño de la fuente */
+  font-weight: bold;
+}
+
+.property-1big-numbers-just-te .feature-title {
+  color: #6b050a; /* Color naranja para los títulos de características */
+  font-size: 2.2rem; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 5px; /* Añade un pequeño margen inferior */
+}
+
+.property-1big-numbers-just-te .subheading2 {
+  color: #860909; /* Color blanco para los subtítulos */
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+  line-height: 1; /* Mejora la legibilidad con un espaciado de línea */
+}
+.column3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Centra todo horizontalmente */
+  align-items: center; /* Centra todo verticalmente */
+  flex-direction: column; /* Asegura que la imagen y el texto estén en columna */
+  padding: 20px; /* Espaciado alrededor */
+  background-color: #f9f9f9; /* Fondo opcional */
+}
+
+.qr-container {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.qr-image {
+  max-width: 80%; /* Asegura que la imagen no se desborde */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Añade espacio entre la imagen y el texto */
+  border: 2px solid #ccc; /* Bordes opcionales */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.qr-text {
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+  color: #c40f8d; /* Color del texto */
+  margin: 0; /* Elimina márgenes innecesarios */
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Hace el texto más llamativo */
+}
+
+
+
+.property-1big-numbers-just-te {
+  background-image: url('publib/pexels-ella-olsson-572949-1640774.jpg'); /* Cambia esto por la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 20px; /* Añade un espacio interno para tu contenido */
+  color: #fff; /* Cambia el color del texto si la imagen de fondo lo requiere */
 }
 .container {
   width: 100%;
@@ -284,7 +362,7 @@
   color: var(--color-gray-100);
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .heading-text1 {
@@ -354,7 +432,7 @@
   line-height: 160%;
   color: var(--color-dimgray);
   display: -webkit-inline-box;
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .text-container3 {
